@@ -9,7 +9,7 @@ export default function Navbar(props) {
       <div className="container-fluid">
         <a className="navbar-brand d-flex align-items-center" href="#">
           <img 
-            src="/android-chrome-192x192.png" 
+            src="android-chrome-192x192.png" 
             alt="logo" 
             width="25" 
             height="25" 
