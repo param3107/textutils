@@ -2,25 +2,11 @@ import React, { useEffect, useState } from "react";
 
 export default function About(props) {
 
-    const [style, setStyle] = useState({
-        color: "white",
-        backgroundColor: "black",
-    });
+    let style = {
+        color: props.mode === 'dark' ? 'white' : 'black',
+        backgroundColor: props.mode === 'dark' ? 'black' : 'white'
+    }
     
-    useEffect(() => {
-        if (props.mode === "light") {
-            setStyle({
-                color: "black",
-                backgroundColor: "white",
-            });
-        } 
-        else {
-            setStyle({
-                color: "white",
-                backgroundColor: "black",
-            })
-        }
-    }, [props.mode]);
   return (
     <div className="container" style={style}>
       <h1 className="my-3">About Us</h1>
